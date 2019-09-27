@@ -4,10 +4,15 @@
   border-radius: 12px;
   font-size: 1.9rem;
   text-align: center;
-  width: 19vw;
-  height: 4vw;
+  width: 200px;
+  height: 40px;
   vertical-align: middle;
   display: table-cell;
+}
+.mobilewidth {
+  max-width: 450px;
+  width: 100%;
+  margin: 0 auto;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -186,15 +191,35 @@ nav {
   width: 100%;
   margin: 0 auto;
   padding: 5vw 0vw 2vw 0vw;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 nav div {
   margin: 0vw 3vw 0vw 0vw;
+}
+@media (max-width: 500px) {
+  nav div {
+    padding: 3vw 0vw 0vw 0vw;
+  }
 }
 nav div a {
   text-decoration: none;
   color: black;
   margin: 1vw;
   font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  nav div a {
+    margin: 5vw;
+  }
 }
 nav h2 {
   font-size: 4rem;
@@ -204,11 +229,25 @@ nav h2 {
   border-top: 2px dashed silver;
   background: #FFEBCD;
 }
+@media (max-width: 500px) {
+  .footer {
+    max-width: 450px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 .footer p {
   text-align: center;
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+@media (max-width: 500px) {
+  .home {
+    max-width: 450px;
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 .home .content-section {
   margin: 30px 0;
@@ -216,13 +255,31 @@ nav h2 {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    display: block;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+    padding: 0%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+    padding: none;
+    margin: none;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -230,6 +287,12 @@ nav h2 {
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -243,6 +306,11 @@ nav h2 {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
 }
@@ -252,9 +320,21 @@ nav h2 {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 80%;
+  }
 }
 .home .content-pick .destination .btn {
   color: white;
@@ -262,10 +342,17 @@ nav h2 {
   border-radius: 12px;
   font-size: 1.9rem;
   text-align: center;
-  width: 19vw;
-  height: 4vw;
+  width: 200px;
+  height: 40px;
   vertical-align: middle;
   display: table-cell;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination .btn {
+    background-color: #33a6cc;
+    width: 70vw;
+    height: 8vw;
+  }
 }
 header {
   max-width: 800px;
@@ -273,8 +360,16 @@ header {
   margin: 0 auto;
   border-bottom: 2px dashed #C0C0C0;
 }
+@media (max-width: 500px) {
+  header {
+    max-width: 450px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 header .bus-picture {
   border-top: 2px dashed silver;
+  max-width: 100%;
 }
 header div {
   margin: 1.5vw 0vw 1.5vw 0vw;
