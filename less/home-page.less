@@ -96,12 +96,18 @@
       }
 
       .btn {
-        .buttons();
+        .buttons(teal,200px,40px);
+
+        &:hover {
+          .buttncolor(teal,white);
+        }
 
         @media @mobile {
-          background-color: #33a6cc;
-          width:70vw;
-          height: 8vw;
+          .buttons(#33a6cc,70vw,8vw);
+
+          &:hover {
+            .buttncolor(#33a6cc, white);
+          }
         }
       }
     }
