@@ -1,1 +1,24 @@
 // Mixins in here
+.buttons (@backgroundco, @width, @height) {
+    color: white;
+    background-color: @backgroundco;
+    border-radius: 12px;
+    font-size: 1.9rem;
+    text-align: center;
+    width: @width;
+    height: @height;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+
+.mobilewidth {
+    max-width: 450px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.buttncolor (@color, @backcolor){
+    color: @color;
+    background-color: @backcolor;
+}
